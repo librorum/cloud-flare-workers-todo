@@ -7,9 +7,21 @@
  *
  * Learn more at https://developers.cloudflare.com/workers/
  */
+import packagejson from '../package.json'
 
 export default {
 	async fetch(request, env, ctx) {
-		return new Response('Hello World!');
+		const url = new URL(request.url)
+		switch (url.pathname) {
+			case '/api/check_in':
+				return new Response(JSON.stringify({
+					version: packagejson.version,
+					server_time: new Date().toISOString(),
+				}))
+			case '/api/random':
+				return new Response(crypto.randomUUID())
+			default:
+				return new Response('Not Found', { status: 404 })
+		}
 	},
-};
+}

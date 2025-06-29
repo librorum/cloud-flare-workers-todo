@@ -1,15 +1,19 @@
 {
 	"name": "cloud-flare-workers-template",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
+		"dev": "concurrently \"pnpm dev:backend\" \"pnpm dev:frontend\"",
+		"dev:backend": "wrangler dev",
+		"dev:frontend": "pnpm --filter frontend dev",
 		"start": "wrangler dev",
-		"test": "vitest"
+		"test": "vitest",
+		"build": "pnpm --filter frontend build"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"concurrently": "^9.2.0",
 		"vitest": "~3.2.0",
 		"wrangler": "^4.22.0"
 	}

@@ -1,0 +1,74 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug Cloudflare Workers",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "pnpm",
+			"runtimeArgs": [
+				"wrangler",
+				"dev",
+				"--inspector-port=9229"
+			],
+			"console": "integratedTerminal",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"attachSimplePort": 9229
+		},
+		{
+			"name": "Debug Quasar Frontend",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "pnpm",
+			"runtimeArgs": [
+				"--filter",
+				"frontend",
+				"dev"
+			],
+			"console": "integratedTerminal",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"skipFiles": [
+				"<node_internals>/**"
+			]
+		},
+		{
+			"name": "Launch Fullstack Dev",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "pnpm",
+			"runtimeArgs": [
+				"run",
+				"dev"
+			],
+			"console": "integratedTerminal",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"NODE_ENV": "development"
+			}
+		}
+	],
+	"compounds": [
+		{
+			"name": "Debug Fullstack App",
+			"configurations": [
+				"Debug Cloudflare Workers",
+				"Debug Quasar Frontend"
+			],
+			"presentation": {
+				"hidden": false,
+				"group": "",
+				"order": 1
+			},
+			"stopAll": true
+		}
+	]
+}
