@@ -1,5 +1,24 @@
 # Cloudflare Workers Template
-클라우드플레어 워커스 템플릿
+클라우드플레어 워커스를 이용한 풀스택 앱의 시작 템플릿입니다.
+프론트엔드는 quasarv2(vue3)를 이용하였습니다.
+vscode에게 프론트엔드와 백엔드를 동시에 디버깅하기 위한 설정도
+launch.json에 되어 있습니다.
+만든 과정은 아래에 설명되어 있습니다.
+이 설명을 따라서 만들거나,
+아니면 이 템플릿으로 프로젝트를 시작해서
+이름을 변경하거나,
+wrangler에서 생성시 이 템플릿의 github 주소를 입력해서
+만들 수 있습니다.
+
+This is a starter template for full-stack applications using Cloudflare Workers.
+The frontend uses Quasar v2 (Vue 3).
+The configuration for debugging both frontend and backend simultaneously in VSCode
+is included in launch.json.
+The creation process is described below.
+You can follow this guide to create your own,
+or start a project with this template and
+change the names,
+or input this template's GitHub URL when creating with wrangler.
 
 ## Project Setup
 프로젝트 설정
