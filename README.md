@@ -61,6 +61,13 @@ to use?
 to use?
 │ repository
 https://github.com/librorum/cloud-flare-workers-template.git
+
+# 버전콘트롤 Yes
+╰ Do you want to use git for version control?
+  Yes / No
+
+# Deploy No
+
 ```
 ## Project Setup(복잡한 버전)
 프로젝트 설정
