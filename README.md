@@ -22,7 +22,10 @@ or input this template's GitHub URL when creating with wrangler.
 
 ## Project Setup
 프로젝트 설정
-
+```
+# 기본 설치 과정
+npm install -g pnpm
+```
 ```sh
 # 프로젝트 생성
 # Create project
@@ -30,7 +33,7 @@ mkdir cloud-flare-workers-template
 cd cloud-flare-workers-template
 # 현재 디렉토리에 생성
 # Create in current directory
-pn dlx wrangler init .
+pnpm dlx wrangler init .
 ╭ Create an application with Cloudflare Step 1 of 3
 │
 ├ In which directory do you want to create your application?
