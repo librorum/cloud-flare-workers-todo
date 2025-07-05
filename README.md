@@ -39,14 +39,28 @@ pnpm dlx wrangler init .
 ├ In which directory do you want to create your application?
 │ dir ./.
 │
-# 카테고리 선택
-# Select category
 ╰ What would you like to start with?
-  ○ Hello World example
-  ○ Framework Starter
-  ○ Application Starter
-  ● Template from a GitHub repo
-  ◁ Go back
+  ○ Hello World example
+  ○ Framework Starter
+  ○ Application Starter
+  ● Template from a GitHub repo
+  ◁ Go back
+
+╭ Create an application with Cloudflare Step 1 of 3
+│
+├ In which directory do you want to create your application?
+│ dir ./.
+│
+├ What would you like to start with?
+│ category Template from a GitHub repo
+│
+╰ What's the url of git repo containing the template you'd like
+to use?
+# 에서 https://github.com/librorum/cloud-flare-workers-template.git 입력하고 엔터
+├ What's the url of git repo containing the template you'd like
+to use?
+│ repository
+https://github.com/librorum/cloud-flare-workers-template.git
 ```
 ## Project Setup(복잡한 버전)
 프로젝트 설정
