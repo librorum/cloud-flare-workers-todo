@@ -29,8 +29,8 @@ npm install -g pnpm
 ```sh
 # 프로젝트 생성
 # Create project
-mkdir cloud-flare-workers-template
-cd cloud-flare-workers-template
+mkdir helloflare
+cd helloflare
 # 현재 디렉토리에 생성
 # Create in current directory
 pnpm dlx wrangler init .
