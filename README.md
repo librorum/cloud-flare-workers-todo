@@ -20,7 +20,35 @@ or start a project with this template and
 change the names,
 or input this template's GitHub URL when creating with wrangler.
 
-## Project Setup
+## Project Setup(복잡한 버전)
+프로젝트 설정
+```
+# 기본 설치 과정
+npm install -g pnpm
+```
+```sh
+# 프로젝트 생성
+# Create project
+mkdir helloflare
+cd helloflare
+# 현재 디렉토리에 생성
+# Create in current directory
+pnpm dlx wrangler init .
+╭ Create an application with Cloudflare Step 1 of 3
+│
+├ In which directory do you want to create your application?
+│ dir ./.
+│
+# 카테고리 선택
+# Select category
+╰ What would you like to start with?
+  ○ Hello World example
+  ○ Framework Starter
+  ○ Application Starter
+  ● Template from a GitHub repo
+  ◁ Go back
+```
+## Project Setup(복잡한 버전)
 프로젝트 설정
 ```
 # 기본 설치 과정
