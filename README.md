@@ -20,17 +20,69 @@ or start a project with this template and
 change the names,
 or input this template's GitHub URL when creating with wrangler.
 
-## Project Setup
+## Project Setup(복잡한 버전)
 프로젝트 설정
-
+```
+# 기본 설치 과정
+npm install -g pnpm
+```
 ```sh
 # 프로젝트 생성
 # Create project
-mkdir cloud-flare-workers-template
-cd cloud-flare-workers-template
+mkdir helloflare
+cd helloflare
 # 현재 디렉토리에 생성
 # Create in current directory
-pn dlx wrangler init .
+pnpm dlx wrangler init .
+╭ Create an application with Cloudflare Step 1 of 3
+│
+├ In which directory do you want to create your application?
+│ dir ./.
+│
+╰ What would you like to start with?
+  ○ Hello World example
+  ○ Framework Starter
+  ○ Application Starter
+  ● Template from a GitHub repo
+  ◁ Go back
+
+╭ Create an application with Cloudflare Step 1 of 3
+│
+├ In which directory do you want to create your application?
+│ dir ./.
+│
+├ What would you like to start with?
+│ category Template from a GitHub repo
+│
+╰ What's the url of git repo containing the template you'd like
+to use?
+# 에서 https://github.com/librorum/cloud-flare-workers-template.git 입력하고 엔터
+├ What's the url of git repo containing the template you'd like
+to use?
+│ repository
+https://github.com/librorum/cloud-flare-workers-template.git
+
+# 버전콘트롤 Yes
+╰ Do you want to use git for version control?
+  Yes / No
+
+# Deploy No
+
+```
+## Project Setup(복잡한 버전)
+프로젝트 설정
+```
+# 기본 설치 과정
+npm install -g pnpm
+```
+```sh
+# 프로젝트 생성
+# Create project
+mkdir helloflare
+cd helloflare
+# 현재 디렉토리에 생성
+# Create in current directory
+pnpm dlx wrangler init .
 ╭ Create an application with Cloudflare Step 1 of 3
 │
 ├ In which directory do you want to create your application?
