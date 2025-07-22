@@ -281,3 +281,12 @@ Instructions:
 ```
 
 * 둘을 동시에 디버깅하기 위해서 launch.json을 수정(파일참고)
+
+### Database
+  * Cloudlflare serverless D1 데이터베이스
+  ```sh
+  pn wrangler d1 create todo-db
+  pn wrangler d1 execute todo-db --command="CREATE TABLE todos (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, description TEXT, completed BOOLEAN DEFAULT FALSE, created_at TEXT DEFAULT CURRENT_TIMESTAMP, updated_at TEXT DEFAULT CURRENT_TIMESTAMP);"
+
+  pn wrangler d1 execute todo-db --command="SELECT * from todos"
+  ```

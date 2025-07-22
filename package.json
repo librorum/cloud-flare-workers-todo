@@ -16,5 +16,8 @@
 		"concurrently": "^9.2.0",
 		"vitest": "~3.2.0",
 		"wrangler": "^4.22.0"
+	},
+	"dependencies": {
+		"hono": "^4.8.4"
 	}
 }

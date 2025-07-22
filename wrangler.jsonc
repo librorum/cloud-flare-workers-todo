@@ -10,6 +10,9 @@
 	"observability": {
 		"enabled": true
 	},
+	"dev": {
+		"port": 8787
+	},
 	"assets": {
 		"directory": "./frontend/dist/spa"
 	},
@@ -42,5 +45,12 @@
 	 * Service Bindings (communicate between multiple Workers)
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
 	 */
-	// "services": [{ "binding": "MY_SERVICE", "service": "my-service" }]
+	// "services": [{ "binding": "MY_SERVICE", "service": "my-service" }],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "todo-db",
+			"database_id": "36b72055-3552-4564-826f-f22ca462c504"
+		}
+	]
 }
